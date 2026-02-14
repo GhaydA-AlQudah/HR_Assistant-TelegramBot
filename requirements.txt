@@ -1,0 +1,42 @@
+pip install pyTelegramBotAPI
+pip install fpdf2
+
+# --- Core Framework ---
+python-dotenv==1.0.1
+loguru==0.7.2
+
+# --- Telegram Bot ---
+python-telegram-bot==21.10
+
+# --- AI & LLM Services ---
+pydantic==2.10.6
+pydantic-ai==0.0.51
+groq==0.15.0
+# Optional: openrouter if needed for specific models
+openrouter==0.1.3 
+
+# --- Database & Models ---
+psycopg2-binary==2.9.10
+SQLAlchemy==2.0.37
+passlib[bcrypt]==1.7.4
+
+# --- PDF Generation & Arabic Support ---
+fpdf2==2.8.2
+arabic-reshaper==3.0.0
+python-bidi==0.4.2
+
+# --- Your Specific Versions ---
+SQLAlchemy==2.0.45
+pydantic-ai==1.51.0
+pydantic==2.12.5
+groq==1.0.0
+openrouter==0.1.3
+
+# --- Essential Libraries for the Code we Cleaned ---
+python-telegram-bot  # Needed for main.py (Async version)
+python-dotenv        # Needed to read .env
+psycopg2-binary      # Needed for database.py
+fpdf2==2.8.2
+                # Needed for pdf_service.py
+loguru==0.7.2
+               # Needed for our logger.py
