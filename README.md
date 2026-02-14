@@ -82,23 +82,16 @@ Traditionally, HR processes are synonymous with **Waiting**. Employees often fin
 ---
 
 ## Technologies Used
-Language: Python 3.10+
+Language: Python 3.12
 
-**Pydantic AI Framework:**  (Strict Schema Validation & Guardrails)
-- less tokens , tool calling, scalable
-- pydantic ai cost tokens agentic
-
-why pydantic ai?
-
-- ux - 1 or 2 at once services
-- cost - smaller prompt Tokens
-- scalability - adding
- more service without need to a new prompt 
-
+**Pydantic AI Framework:** 
+- Eliminates the need for manual schemas: The LLM automatically understands required parameters through type hints.
+  -  Reduced token consumptionز
+  -  Enhanced scalability: Makes it easier and faster to integrate additional services and tools.
 
 **LLM Provider:** OpenRouter (google/gemma-3-27b-it:free)
 
-**Database:** PostgreSQL (Relational Modeling - Snowflake)
+**Database:** PostgreSQL (Relational Modeling )
 why postgresql
 
 **Bot Framework:** python-telegram-bot (Asynchronous handling)
