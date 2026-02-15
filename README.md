@@ -14,10 +14,6 @@ This bot acts as **a Conversational Interface** for a robust, centralized HR Man
 **Data Integrity:** The LLM does not "generate" HR data; it retrieves and updates existing records, ensuring 100% accuracy between the chat interface and the core system.
 
 
-## Model Architecture
-
-
-
 ## System Architecture
 
 
