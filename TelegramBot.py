@@ -177,10 +177,11 @@ class HRBot:
                 return
 
             emp_id = user_data.get('emp_id') 
+            role = user_data.get('role', 'employee').lower()
             await message_obj.chat.send_action("typing")
 
             # Orchestrate message through AI Agentic Layer
-            tool_response, llm_response = await llm_service.process_user_message(text, emp_id)
+            tool_response, llm_response = await llm_service.process_user_message(text, emp_id, role)
             
             # 1. Handle conversational AI response
             if llm_response and "ACTION_" not in llm_response:
