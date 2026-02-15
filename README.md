@@ -146,6 +146,7 @@ Run your SQL migration scripts in PostgreSQL to set up the tables.
 ```
 python TelegramBot.py
 ```
+---
 
 ## Examples 
 ### Global Services(Manager/ Employee/ HR)
@@ -242,3 +243,5 @@ python TelegramBot.py
 **By GhaydA' Al-Qudah**
 
 **Computer Engineer | AI Enthusiast**
+
+---
