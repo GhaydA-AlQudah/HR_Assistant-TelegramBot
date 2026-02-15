@@ -13,6 +13,7 @@ This bot acts as **a Conversational Interface** for a robust, centralized HR Man
 
 **Data Integrity:** The LLM does not "generate" HR data; it retrieves and updates existing records, ensuring 100% accuracy between the chat interface and the core system.
 
+---
 
 ## System Architecture
 
@@ -67,6 +68,7 @@ This bot acts as **a Conversational Interface** for a robust, centralized HR Man
 - **Single Source of Truth**: All information originates from a deterministic PostgreSQL database, 
    following a strict **Telegram > LLM > Tool > Service > DB flow**.
 
+---
 
 ## Database Schema
 
@@ -108,6 +110,7 @@ why postgresql
 
 **Dotenv** (Environment Management)
 
+---
 
 ##  Installation
 
@@ -215,12 +218,14 @@ python TelegramBot.py
 #### ِAfter 
 ![Secure_system_prompt](github_assets/secured_system_prompt.png)
 
+---
 
 ## Business Limitations
 1. **Service Availability & Resilience:** The system's uptime is intrinsically linked to **third-party** API providers (OpenRouter & Telegram).
 2. **Data Sovereignty & Compliance:** Processing sensitive HR data via public LLM endpoints requires careful alignment with **GDPR**.
 3. Token Consumption & Scalability Costs.
 
+---
 
 ## Future Work
 - [ ] **Advanced Fallbacks:**  for Unexpected Inputs & Edge Cases.
@@ -230,6 +235,7 @@ python TelegramBot.py
 - [ ] Implementation of strict **rate-limiting (Hard Cap)** to optimize LLM token consumption.
 - [ ] Decoupling services into independent  **Microservices ecosystem**.
 
+---
 
 ## 👤 Author
 
