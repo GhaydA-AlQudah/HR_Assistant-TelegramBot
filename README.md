@@ -4,6 +4,20 @@
 
 Traditionally, HR processes are synonymous with **Waiting**. Employees often find themselves caught in a loop of sending emails, checking portal statuses, or manually tracking their leave balances on spreadsheets.
 
+## **Our Solution:**
+This bot acts as **a Conversational Interface** for a robust, centralized HR Management System. While the LLM handles the interaction, all operations are executed against a deterministic PostgreSQL database, ensuring that:
+
+**Real-time Synchronization:** The bot is not a standalone tool; it is a smart gateway to the company's Single Source of Truth (SSOT).
+
+**System of Record:** Every request (like leave applications) is processed through the Service Layer and permanently recorded in the official database, just like a traditional HR portal but with the speed of AI.
+
+**Data Integrity:** The LLM does not "generate" HR data; it retrieves and updates existing records, ensuring 100% accuracy between the chat interface and the core system.
+
+
+## Model Architecture
+
+
+
 ## System Architecture
 
 
