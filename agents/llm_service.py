@@ -18,7 +18,7 @@ class LLMService:
         """Initializes the LLMService and logs status."""
         logger.info("[+] LLMService initialized with Pydantic AI Tools and History Support")
 
-    async def process_user_message(self, user_prompt: str, emp_id: int) -> Tuple[Optional[str], str]:
+    async def process_user_message(self, user_prompt: str, emp_id: int, role: str) -> Tuple[Optional[str], str]:
         """
         Processes a user message by invoking the HR Agent with existing chat history.
 
@@ -33,7 +33,7 @@ class LLMService:
         """
         try:
             # Prepare dependencies for the HR Agent
-            deps = HRDeps(emp_id=emp_id)
+            deps = HRDeps(emp_id=emp_id, role = role)
             
             # Initialize history for new users to prevent KeyErrors
             if emp_id not in chat_history_registry:
